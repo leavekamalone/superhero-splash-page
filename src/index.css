@@ -1,0 +1,250 @@
+body {
+ 
+    background: #aeb7c2;
+    margin: 0;
+	padding: 0 0 15px;
+	background-image: url("https://wallpapercave.com/wp/wp4098030.jpg");
+	background-size: cover;
+
+ }
+
+ article {
+	margin: auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-gap: .5em;
+    
+}
+
+.donateform {
+	margin: auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-gap: .5em;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	
+	
+}
+.api {
+	margin: auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-gap: .5em;
+}
+h1, cite, img, aside, main {
+	grid-column: 2;
+}
+main {
+	max-width: 1000px;
+	margin: auto;
+	text-align: justify;
+}
+
+
+h1 span {
+	display: block;
+}
+img {
+	width: 100%;
+}
+.first {
+	margin-bottom: -10px;
+	color: #9b3430;
+}
+.second {
+	transform: translateY(50%);
+	background: #aeb7c2;
+	width: 50px;
+	margin: auto;
+	color: #9b3430;
+}
+.third {
+	border: thin solid black;
+	border-width: thin 0;
+  	padding: 10px 0 0;
+  	color: #9b3430;
+}
+.fourth {
+	padding: 10px 0 0;
+  	color: #9b3430;
+  	text-shadow: 1px 0 0 white, 0 -1px 0 white, 0 1px 0 white, -1px 0 0 white ;
+}
+
+
+p:first-child {
+	margin-top: 0;
+}
+p:last-child::after {
+	content: ' ■';
+	opacity: 0.2;
+}
+
+h1 {
+	text-align: center;
+}
+.first {
+	font-family: 'questa-grande';
+	text-transform: uppercase;
+	font-size: 1em;
+}
+.second {
+	font-family: 'brandon-grotesque';
+	text-transform: uppercase;
+	font-size: 0.5em;
+}
+.third {
+	font-family: 'ltc-bodoni-175';
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+
+@media only screen and (min-width:750px) {
+	html, body { padding: 30px 0; }
+	article {
+		grid-template-columns: 1fr 3fr 1fr;
+		grid-gap: 1.5em;
+	}
+	main {
+		margin: 0;
+	}
+
+	.first {
+		font-size: 2.2em;
+		margin-bottom: -15px;
+	}
+	.second {
+		font-size: 0.75em;
+	}
+	.third {
+		font-size: 4em;
+	}
+}
+
+
+.float-button{
+  	font-family: 'questa-grande';
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:30px;
+	right:30px;
+	background-color:#ffffff;
+	color:#9b3430;
+	border-radius:50px;
+  	border: 3px solid #9b3430;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  	text-decoration: none;
+  	font-weight: 600;
+  	font-size: 22px;
+  	line-height: 25px;
+}
+
+.float-button-text {
+  	margin-top: 22px;
+}
+
+main {
+	font-family: 'abril-text';
+}
+
+
+
+.thought {
+	display:flex;
+	
+	background-color:ivory;
+	
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+  }
+  .thought:before,
+  .thought:after {
+	content:"";
+	background-color:#fff;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index:-1;
+  }
+  .thought:before {
+	width:44px;
+	height:44px;
+	top:-12px;
+	left:28px;
+	box-shadow:-50px 30px 0 -12px #fff;
+  }
+  .thought:after {
+	bottom:-10px;
+	right:26px;
+	width:30px;
+	height:30px;
+	box-shadow:40px -34px 0 0 #fff,
+			   -28px -6px 0 -2px #fff,
+			   -24px 17px 0 -6px #fff,
+			   -5px 25px 0 -10px #fff;
+	
+  }
+
+  input[type=text], select, textarea {
+	width: 100%; 
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical 
+  }
+
+  input[type=email], select, textarea {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical;
+  }
+
+
+  input[type=number], select, textarea {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical 
+  }
+
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+
+  label {
+	width: 50px;
+	margin: auto;
+	color: #9b3430;
+  }
